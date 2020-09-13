@@ -1,0 +1,23 @@
+[
+	{
+		"strBaseName" : "",
+		"generatesTasks" : 
+		[
+			
+		]
+	},
+	{
+		"strBaseName" : "Maintenance",
+		"generatesTasks" : 
+		[
+			"CourseCorrection"
+		]
+	},
+	{
+		"strBaseName" : "Navigation",
+		"generatesTasks" : 
+		[
+			
+		]
+	}
+]

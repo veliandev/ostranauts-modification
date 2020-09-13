@@ -1,0 +1,381 @@
+[
+  {
+    "strName" : "DcAchievement",
+    "strCond" : "StatAchievement",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcAchievement01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAchievement02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAchievement03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAchievement04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAchievement05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcAltruism",
+    "strCond" : "StatAltruism",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcAltruism01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAltruism02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAltruism03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAltruism04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAltruism05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcAtrophy",
+    "strCond" : "StatAtrophy",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcAtrophy01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAtrophy02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAtrophy03", "fMin"     : 20, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcAutonomy",
+    "strCond" : "StatAutonomy",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcAutonomy01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAutonomy02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAutonomy03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAutonomy04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcAutonomy05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcBlood",
+    "strCond" : "StatBlood",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcBlood01", "fMin"     : 0, "fMax"     : 15, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBlood02", "fMin"     : 15, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBlood03", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBlood04", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcBodyTemp",
+    "strCond" : "StatSolidTemp",
+    "aThresholds" : [
+      { "strLootNew" : "CONDShivering", "fMin"     : 0.0, "fMax"     : 308.8, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDSweating", "fMin"     : 310.9, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBodyTemp01", "fMin"     : 0.0, "fMax"     : 293.2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBodyTemp02", "fMin"     : 293.2, "fMax"     : 301.0, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBodyTemp03", "fMin"     : 301.0, "fMax"     : 305.4, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBodyTemp04", "fMin"     : 305.4, "fMax"     : 308.8, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBodyTemp05", "fMin"     : 308.8, "fMax"     : 310.9, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBodyTemp06", "fMin"     : 310.9, "fMax"     : 312, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBodyTemp07", "fMin"     : 312, "fMax"     : 314.3, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBodyTemp08", "fMin"     : 314.3, "fMax"     : 315.7, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcBodyTemp09", "fMin"     : 315.7, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcContact",
+    "strCond" : "StatContact",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcContact01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcContact02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcContact03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcContact04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcContact05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcDefecate",
+    "strCond" : "StatDefecate",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcDefecate01", "fMin"     : 0, "fMax"     : 28, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcDefecate02", "fMin"     : 28, "fMax"     : 56, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcDefecate03", "fMin"     : 56, "fMax"     : 68, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcDefecate04", "fMin"     : 68, "fMax"     : 85, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcDefecate05", "fMin"     : 85, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcDrunk",
+    "strCond" : "StatDrunk",
+    "aThresholds" : [
+      { "strLootNew" : "Blank", "fMin"     : 0, "fMax"     : 2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDTipsy", "fMin"     : 2, "fMax"     : 4, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDrunk", "fMin"     : 4, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcEncumbrance",
+    "strCond" : "StatEncumbrance",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcEncumbrance01", "fMin"     : 0, "fMax"     : 82, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcEncumbrance02", "fMin"     : 82, "fMax"     : 107, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcEncumbrance03", "fMin"     : 107, "fMax"     : 157, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcEncumbrance04", "fMin"     : 157, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcEsteem",
+    "strCond" : "StatEsteem",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcEsteem01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcEsteem02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcEsteem03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcEsteem04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcEsteem05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcFamily",
+    "strCond" : "StatFamily",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcFamily01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFamily02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFamily03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFamily04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFamily05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcFatigue",
+    "strCond" : "StatFatigue",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcFatigue01", "fMin"     : 0, "fMax"     : 1, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFatigue02", "fMin"     : 1, "fMax"     : 2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFatigue03", "fMin"     : 2, "fMax"     : 3, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFatigue04", "fMin"     : 3, "fMax"     : 4, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFatigue05", "fMin"     : 4, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcFood",
+    "strCond" : "StatFood",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcFood01", "fMin"     : 0, "fMax"     : 7, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFood02", "fMin"     : 7, "fMax"     : 72, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFood03", "fMin"     : 72, "fMax"     : 650, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFood04", "fMin"     : 650, "fMax"     : 1350, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcFood05", "fMin"     : 1350, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcGasPpN2",
+    "strCond" : "StatGasPpN2",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcGasPpN2", "fMin"     : 75, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcGasPpO2",
+    "strCond" : "StatGasPpO2",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcGasPpO2", "fMin"     : 20, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcGasPressure",
+    "strCond" : "StatGasPressure",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcGasPressure01", "fMin"     : 0.0, "fMax"     : 15.2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcGasPressure02", "fMin"     : 15.2, "fMax"     : 50.65, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcGasPressure03", "fMin"     : 50.65, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcGasPressureHuman",
+    "strCond" : "StatGasPressure",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcGasPressure01Human", "fMin"     : 0.0, "fMax"     : 15.2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcGasPressure02Human", "fMin"     : 15.2, "fMax"     : 50.65, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcGasPressure03Human", "fMin"     : 50.65, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcGasTemp",
+    "strCond" : "StatGasTemp",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcGasTemp01", "fMin"     : 0.0, "fMax"     : 296, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcGasTemp02", "fMin"     : 296, "fMax"     : 299, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcGasTemp03", "fMin"     : 299, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcHydration",
+    "strCond" : "StatHydration",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcHydration01", "fMin"     : 0.0, "fMax"     : 18, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcHydration02", "fMin"     : 18, "fMax"     : 24, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcHydration03", "fMin"     : 24, "fMax"     : 36, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcHydration04", "fMin"     : 36, "fMax"     : 72, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcHydration05", "fMin"     : 72, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcHygiene",
+    "strCond" : "StatHygiene",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcHygiene01", "fMin"     : 0.0, "fMax"     : 48, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcHygiene02", "fMin"     : 48, "fMax"     : 96, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcHygiene03", "fMin"     : 96, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcImmunostimulant",
+    "strCond" : "Immunostimulant",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcImmunostimulant", "fMin"     : 1.0, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcInfection",
+    "strCond" : "StatInfection",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcInfection01", "fMin"     : 0.0, "fMax"     : 35, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcInfection02", "fMin"     : 35, "fMax"     : 65, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcInfection03", "fMin"     : 65, "fMax"     : 95, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcInfection04", "fMin"     : 95, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcIntimacy",
+    "strCond" : "StatIntimacy",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcIntimacy01", "fMin"     : 0.0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcIntimacy02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcIntimacy03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcIntimacy04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcIntimacy05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcMeaning",
+    "strCond" : "StatMeaning",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcMeaning01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcMeaning02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcMeaning03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcMeaning04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcMeaning05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcOxygen",
+    "strCond" : "StatOxygen",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcOxygen02", "fMin"     : 0.00319, "fMax"     : 0.01823, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcOxygen03", "fMin"     : 0.01823, "fMax"     : 0.054691, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcOxygen04", "fMin"     : 0.054691, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcPain",
+    "strCond" : "StatPain",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPain01", "fMin"     : 0, "fMax"     : 25, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPain02", "fMin"     : 25, "fMax"     : 50, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPain03", "fMin"     : 50, "fMax"     : 75, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPain04", "fMin"     : 75, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcPoison",
+    "strCond" : "StatPoison",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPoison01", "fMin"     : 0, "fMax"     : 4, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPoison02", "fMin"     : 4, "fMax"     : 16, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPoison03", "fMin"     : 16, "fMax"     : 28, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPoison04", "fMin"     : 28, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPoison05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcPopulation",
+    "strCond" : "StatPopulation",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPopulation01", "fMin"     : 0, "fMax"     : 0.5, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPopulation02", "fMin"     : 0.5, "fMax"     : 1, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPopulation03", "fMin"     : 1, "fMax"     : 2, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPopulation04", "fMin"     : 2, "fMax"     : 5, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPopulation05", "fMin"     : 5, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcPrivacy",
+    "strCond" : "StatPrivacy",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcPrivacy01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPrivacy02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPrivacy03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPrivacy04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcPrivacy05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcRad",
+    "strCond" : "StatRad",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcRad01", "fMin"     : 0, "fMax"     : 21, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcRad02", "fMin"     : 21, "fMax"     : 1000, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcRad03", "fMin"     : 1000, "fMax"     : 4250, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcRad04", "fMin"     : 4250, "fMax"     : 10000, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcRad05", "fMin"     : 10000, "fMax"     : 30000, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcRad06", "fMin"     : 30000, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcSatiety",
+    "strCond" : "StatSatiety",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcSatiety01", "fMin"     : 0, "fMax"     : 4, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSatiety02", "fMin"     : 4, "fMax"     : 8, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSatiety03", "fMin"     : 8, "fMax"     : 12, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSatiety04", "fMin"     : 12, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcSecurity",
+    "strCond" : "StatSecurity",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcSecurity01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSecurity02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSecurity03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSecurity04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSecurity05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcSelfRespect",
+    "strCond" : "StatSelfRespect",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcSelfRespect01", "fMin"     : 0, "fMax"     : 10, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSelfRespect02", "fMin"     : 10, "fMax"     : 20, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSelfRespect03", "fMin"     : 20, "fMax"     : 30, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSelfRespect04", "fMin"     : 30, "fMax"     : 40, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSelfRespect05", "fMin"     : 40, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcSleep",
+    "strCond" : "StatSleep",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcSleep01", "fMin"     : 0.0, "fMax"     : 16, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSleep02", "fMin"     : 16, "fMax"     : 24, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSleep03", "fMin"     : 24, "fMax"     : 48, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSleep04", "fMin"     : 48, "fMax"     : 72, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSleep05", "fMin"     : 72, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcSleepComfort",
+    "strCond" : "StatSleepComfort",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcSleepComfort01", "fMin"     : 0.0, "fMax"     : 8, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcSleepComfort02", "fMin"     : 8, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  },
+  {
+    "strName" : "DcWeird",
+    "strCond" : "StatWeird",
+    "aThresholds" : [
+      { "strLootNew" : "CONDDcWeird01", "fMin"     : 0.0, "fMax"     : 8, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcWeird02", "fMin"     : 8, "fMax"     : 16, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcWeird03", "fMin"     : 16, "fMax"     : 32, "fMinAdd"  : 1, "fMaxAdd"  : -1 },
+      { "strLootNew" : "CONDDcWeird04", "fMin"     : 32, "fMax"     : 9e99, "fMinAdd"  : 1, "fMaxAdd"  : -1 }
+    ]
+  }
+]

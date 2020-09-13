@@ -1,0 +1,26 @@
+[
+  {
+    "strName" : "3Mechanics",
+    "strStartInteraction" : "",
+    "aInteractNames" : [
+      "Plot3MechanicsSpawn"
+    ],
+    "bCreateMissing" : true
+  },
+  {
+    "strName" : "Bar1Snitch",
+    "strStartInteraction" : "Bar1SnitchOffer",
+    "aInteractNames" : [
+      "Bar1SnitchPrereqTarget",
+      "Bar1SnitchPrereqLEO"
+    ],
+    "bCreateMissing" : true
+  },
+  {
+    "strName" : "Bar1SnitchLEO",
+    "strStartInteraction" : "Bar1SnitchLEO",
+    "aInteractNames" : [
+    ],
+    "bCreateMissing" : false
+  }
+]

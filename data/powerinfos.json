@@ -1,0 +1,368 @@
+[
+  {
+    "strName": "AirPump",
+    "aInputPts"      : [
+      "PowerA"
+    ],
+    "fAmount": 7.6e-5,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "",
+    "strIntPowerOff": "",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "AirPump02",
+    "aInputPts"      : [
+      "PowerA"
+    ],
+    "fAmount": 7.6e-5,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSAirPump02OnAllow",
+    "strIntPowerOff": "MSAirPump02OffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "AlarmPressureN2",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 0.0000000625,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSAlarmN2SwitchOnAllow",
+    "strIntPowerOff": "MSAlarmN2SwitchOffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "AlarmPressureO2",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 0.0000000625,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSAlarmO2SwitchOnAllow",
+    "strIntPowerOff": "MSAlarmO2SwitchOffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "AlarmPressureTemp",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 0.0000000625,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSAlarmTempSwitchOnAllow",
+    "strIntPowerOff": "MSAlarmTempSwitchOffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "Battery02",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 1.0,
+    "fMaxStored": 80.96,
+    "strIntPowerOn": "",
+    "strIntPowerOff": "",
+    "strUsePowerCT": null,
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "Battery02Loose",
+    "aInputPts"      : [
+    ],
+    "fAmount": 1.0,
+    "fMaxStored": 80.96,
+    "strIntPowerOn": "",
+    "strIntPowerOff": "",
+    "strUsePowerCT": null,
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "Battery03",
+    "aInputPts"      : [
+    ],
+    "fAmount": 1.0,
+    "fMaxStored": 0.82,
+    "strIntPowerOn": "",
+    "strIntPowerOff": "",
+    "strUsePowerCT": null,
+    "strRechargeCT": null
+  },
+  {
+    "strName": "Cooler01",
+    "aInputPts"      : [
+      "PowerA",
+      "PowerB"
+    ],
+    "fAmount": 7.6e-5,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSCooler01OnAllow",
+    "strIntPowerOff": "MSCooler01OffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "Door01Closed",
+    "aInputPts"      : [
+      "PowerA",
+      "PowerB"
+    ],
+    "fAmount": 0.05,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSDoor01ClosedPowerupAllow",
+    "strIntPowerOff": "MSDoor01ClosedShutdownAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "Door01ClosedLocked",
+    "aInputPts"      : [
+      "PowerA",
+      "PowerB"
+    ],
+    "fAmount": 0.05,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSDoor01ClosedLockedPowerupAllow",
+    "strIntPowerOff": "MSDoor01ClosedLockedShutdownAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "Door01Open",
+    "aInputPts"      : [
+      "PowerA",
+      "PowerB"
+    ],
+    "fAmount": 0.05,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSDoor01OpenPowerupAllow",
+    "strIntPowerOff": "MSDoor01OpenShutdownAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "Door01OpenLocked",
+    "aInputPts"      : [
+      "PowerA",
+      "PowerB"
+    ],
+    "fAmount": 0.05,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSDoor01OpenLockedPowerupAllow",
+    "strIntPowerOff": "MSDoor01OpenLockedShutdownAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "EVASuit",
+    "aInputPts"      : [
+    ],
+    "fAmount": 0.000278,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSEVASwitchOnAllow",
+    "strIntPowerOff": "MSEVASwitchOffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  false
+  },
+  {
+    "strName": "Heater01",
+    "aInputPts"      : [
+      "PowerA",
+      "PowerB"
+    ],
+    "fAmount": 0.0011,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSHeater01OnAllow",
+    "strIntPowerOff": "MSHeater01OffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "Light",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 0.0000000625,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSLightSwitchOnAllow",
+    "strIntPowerOff": "MSLightSwitchOffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "LightOrange",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 0.0000000625,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSLightSwitchOnOrangeAllow",
+    "strIntPowerOff": "MSLightSwitchOffOrangeAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "RCSCluster01",
+    "aInputPts"      : [
+      "Power"
+    ],
+    "fAmount": 2.78e-6,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSRCSCluster01OnAllow",
+    "strIntPowerOff": "MSRCSCluster01OffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "RCSDistro01",
+    "aInputPts"      : [
+      "Power"
+    ],
+    "fAmount": 7.6e-5,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSRCSDistro01OnAllow",
+    "strIntPowerOff": "MSRCSDistro01OffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "StationNav",
+    "aInputPts"      : [
+      "PowerA"
+    ],
+    "fAmount": 0.000555,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSStationNavSwitchOnAllow",
+    "strIntPowerOff": "MSStationNavSwitchOffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "ReactorIC01",
+    "aInputPts"      : [
+      "Output"
+    ],
+    "fAmount": 34000000.0,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSReactorSwitchOnAllow",
+    "strIntPowerOff": "MSReactorSwitchOffAllow",
+    "strUsePowerCT": null,
+    "strRechargeCT": "TIsReadyRecharge",
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "ReactorIC01Off",
+    "aInputPts"      : [
+      "Output"
+    ],
+    "fAmount": 0.0,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSReactorSwitchOnAllow",
+    "strIntPowerOff": "MSReactorSwitchOffAllow",
+    "strUsePowerCT": null,
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "ReactorIC02Batt",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 0.14,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSReactor02SwitchIgnitionAllow",
+    "strIntPowerOff": "MSReactor02SwitchOffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "ReactorIC02Ignition",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 34000000.0,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": null,
+    "strIntPowerOff": "MSReactor02SwitchOffAllow",
+    "strUsePowerCT": null,
+    "strRechargeCT": "TIsReadyRecharge",
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "ReactorIC02Off",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 0.14,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSReactor02SwitchBattAllow",
+    "strIntPowerOff": null,
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "ReactorIC03Batt",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 0.14,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSReactor03SwitchIgnitionAllow",
+    "strIntPowerOff": "MSReactor03SwitchOffAllow",
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "ReactorIC03Ignition",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 34000000.0,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": null,
+    "strIntPowerOff": "MSReactor03SwitchOffAllow",
+    "strUsePowerCT": null,
+    "strRechargeCT": "TIsReadyRecharge",
+    "bAllowExtPower" :  true
+  },
+  {
+    "strName": "ReactorIC03Off",
+    "aInputPts"      : [
+      "PowerSource"
+    ],
+    "fAmount": 0.14,
+    "fMaxStored": 0.0,
+    "strIntPowerOn": "MSReactor03SwitchBattAllow",
+    "strIntPowerOff": null,
+    "strUsePowerCT": "TIsReadyUsePower",
+    "strRechargeCT": null,
+    "bAllowExtPower" :  true
+  }
+]

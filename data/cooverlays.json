@@ -1,0 +1,215 @@
+[
+    {
+        "strName" : "ItmBattery02LowPower",
+        "strNameFriendly" : "Battery",
+        "strImg" : "ItmBattery02",
+        "strImgNorm" : "ItmBattery02n",
+        "strPortraitImg" : "ItmBattery02",
+        "strCOBase"    : "ItmBattery02",
+        "strCondLoot"    : "CNDOLBatt02LowPower",
+        "mapModeSwitches"    : [
+            "ItmBattery02Loose", "ItmBattery02LowPowerLoose"
+        ]
+    },
+    {
+        "strName" : "ItmBattery02LowPowerLoose",
+        "strNameFriendly" : "Battery (Loose)",
+        "strImg" : "ItmBattery02Loose",
+        "strImgNorm" : "ItmBattery02Loosen",
+        "strPortraitImg" : "ItmBattery02Loose",
+        "strCOBase"    : "ItmBattery02Loose",
+        "strCondLoot"    : "CNDOLBatt02LowPower",
+        "mapModeSwitches"    : [
+            "ItmBattery02", "ItmBattery02LowPower"
+        ]
+    },
+    {
+        "strName" : "ItmWallMSSLFWhite",
+        "strNameFriendly" : "Mobile Space Systems \"Light Framework\" Wall",
+        "strImg" : "tiles/ItmWallPanelWSheet",
+        "strImgNorm" : "tiles/ItmWallPanelWSheetn",
+        "strPortraitImg" : "tiles/ItmWallPanelW",
+        "strCOBase"    : "ItmWall1x1",
+        "strCondLoot"    : "CNDOLWallMSSLFWhite",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallMSSLFWhite",
+            "ItmWall1x1Patch", "ItmWallMSSLFWhitePatch",
+            "ItmWall1x1Dmg", "ItmWallMSSLFWhiteDmg",
+            "ItmWall1x1Loose", "ItmWallMSSLFWhiteLoose"
+        ]
+    },
+    {
+        "strName" : "ItmWallMSSLFWhiteDmg",
+        "strNameFriendly" : "Mobile Space Systems \"Light Framework\" Wall (Damaged)",
+        "strImg" : "tiles/ItmWallPanelWDmg",
+        "strImgNorm" : "tiles/ItmWallDmgn",
+        "strPortraitImg" : "tiles/ItmWallPanelWDmg",
+        "strCOBase"    : "ItmWall1x1Dmg",
+        "strCondLoot"    : "CNDOLWallMSSLFWhite",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallMSSLFWhite",
+            "ItmWall1x1Patch", "ItmWallMSSLFWhitePatch",
+            "ItmWall1x1Dmg", "ItmWallMSSLFWhiteDmg",
+            "ItmWall1x1Loose", "ItmWallMSSLFWhiteLoose"
+        ]
+    },
+    {
+        "strName" : "ItmWallMSSLFWhiteLoose",
+        "strNameFriendly" : "Mobile Space Systems \"Light Framework\" Wall (Loose)",
+        "strImg" : "tiles/ItmWallPanelWLoose",
+        "strImgNorm" : "tiles/ItmWallPanelWLoosen",
+        "strPortraitImg" : "tiles/ItmWallPanelWLoose",
+        "strCOBase"    : "ItmWall1x1Loose",
+        "strCondLoot"    : "CNDOLWallMSSLFWhite",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallMSSLFWhite",
+            "ItmWall1x1Patch", "ItmWallMSSLFWhitePatch",
+            "ItmWall1x1Dmg", "ItmWallMSSLFWhiteDmg",
+            "ItmWall1x1Loose", "ItmWallMSSLFWhiteLoose"
+        ],
+        "aInteractionsReplace"    : [
+            "ACTWall1x1Install", "ACTWallMSSLFWhiteInstall"
+        ]
+    },
+    {
+        "strName" : "ItmWallMSSLFWhitePatch",
+        "strNameFriendly" : "Mobile Space Systems \"Light Framework\" Wall (Patched)",
+        "strImg" : "tiles/ItmWallPanelWPatch",
+        "strImgNorm" : "tiles/ItmWallPatchn",
+        "strPortraitImg" : "tiles/ItmWallPanelWPatch",
+        "strCOBase"    : "ItmWall1x1Patch",
+        "strCondLoot"    : "CNDOLWallMSSLFWhite",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallMSSLFWhite",
+            "ItmWall1x1Patch", "ItmWallMSSLFWhitePatch",
+            "ItmWall1x1Dmg", "ItmWallMSSLFWhiteDmg",
+            "ItmWall1x1Loose", "ItmWallMSSLFWhiteLoose"
+        ]
+    },
+    {
+        "strName" : "ItmWallRYOB01",
+        "strNameFriendly" : "Ryokka \"B-01\" Wall",
+        "strImg" : "tiles/ItmWallMetalBSheet",
+        "strImgNorm" : "tiles/ItmWallMetalBSheetn",
+        "strPortraitImg" : "tiles/ItmWallMetalB",
+        "strCOBase"    : "ItmWall1x1",
+        "strCondLoot"    : "CNDOLWallRYOB01",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallRYOB01",
+            "ItmWall1x1Patch", "ItmWallRYOB01Patch",
+            "ItmWall1x1Dmg", "ItmWallRYOB01Dmg",
+            "ItmWall1x1Loose", "ItmWallRYOB01Loose"
+        ]
+    },
+    {
+        "strName" : "ItmWallRYOB01Dmg",
+        "strNameFriendly" : "Ryokka \"B-01\" Wall (Damaged)",
+        "strImg" : "tiles/ItmWallMetalBDmg",
+        "strImgNorm" : "tiles/ItmWallDmgn",
+        "strPortraitImg" : "tiles/ItmWallMetalBDmg",
+        "strCOBase"    : "ItmWall1x1Dmg",
+        "strCondLoot"    : "CNDOLWallRYOB01",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallRYOB01",
+            "ItmWall1x1Patch", "ItmWallRYOB01Patch",
+            "ItmWall1x1Dmg", "ItmWallRYOB01Dmg",
+            "ItmWall1x1Loose", "ItmWallRYOB01Loose"
+        ]
+    },
+    {
+        "strName" : "ItmWallRYOB01Loose",
+        "strNameFriendly" : "Ryokka \"B-01\" Wall (Loose)",
+        "strImg" : "tiles/ItmWallMetalBLoose",
+        "strImgNorm" : "tiles/ItmWallMetalBLoosen",
+        "strPortraitImg" : "tiles/ItmWallMetalBLoose",
+        "strCOBase"    : "ItmWall1x1Loose",
+        "strCondLoot"    : "CNDOLWallRYOB01",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallRYOB01",
+            "ItmWall1x1Patch", "ItmWallRYOB01Patch",
+            "ItmWall1x1Dmg", "ItmWallRYOB01Dmg",
+            "ItmWall1x1Loose", "ItmWallRYOB01Loose"
+        ],
+        "aInteractionsReplace"    : [
+            "ACTWall1x1Install", "ACTWallRYOB01Install"
+        ]
+    },
+    {
+        "strName" : "ItmWallRYOB01Patch",
+        "strNameFriendly" : "Ryokka \"B-01\" Wall (Patched)",
+        "strImg" : "tiles/ItmWallMetalBPatch",
+        "strImgNorm" : "tiles/ItmWallPatchn",
+        "strPortraitImg" : "tiles/ItmWallMetalBPatch",
+        "strCOBase"    : "ItmWall1x1Patch",
+        "strCondLoot"    : "CNDOLWallRYOB01",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallRYOB01",
+            "ItmWall1x1Patch", "ItmWallRYOB01Patch",
+            "ItmWall1x1Dmg", "ItmWallRYOB01Dmg",
+            "ItmWall1x1Loose", "ItmWallRYOB01Loose"
+        ]
+    },
+    {
+        "strName" : "ItmWallTSDOCaution01",
+        "strNameFriendly" : "Testudo \"B-01\" Wall",
+        "strImg" : "tiles/ItmWallTSDOCaution01Sheet",
+        "strImgNorm" : "tiles/ItmWallTSDOCaution01Sheetn",
+        "strPortraitImg" : "tiles/ItmWallTSDOCaution01",
+        "strCOBase"    : "ItmWall1x1",
+        "strCondLoot"    : "CNDOLWallTSDOCaution01",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallTSDOCaution01",
+            "ItmWall1x1Patch", "ItmWallTSDOCaution01Patch",
+            "ItmWall1x1Dmg", "ItmWallTSDOCaution01Dmg",
+            "ItmWall1x1Loose", "ItmWallTSDOCaution01Loose"
+        ]
+    },
+    {
+        "strName" : "ItmWallTSDOCaution01Dmg",
+        "strNameFriendly" : "Ryokka \"B-01\" Wall (Damaged)",
+        "strImg" : "tiles/ItmWallMetalBDmg",
+        "strImgNorm" : "tiles/ItmWallDmgn",
+        "strPortraitImg" : "tiles/ItmWallMetalBDmg",
+        "strCOBase"    : "ItmWall1x1Dmg",
+        "strCondLoot"    : "CNDOLWallTSDOCaution01",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallTSDOCaution01",
+            "ItmWall1x1Patch", "ItmWallTSDOCaution01Patch",
+            "ItmWall1x1Dmg", "ItmWallTSDOCaution01Dmg",
+            "ItmWall1x1Loose", "ItmWallTSDOCaution01Loose"
+        ]
+    },
+    {
+        "strName" : "ItmWallTSDOCaution01Loose",
+        "strNameFriendly" : "Ryokka \"B-01\" Wall (Loose)",
+        "strImg" : "tiles/ItmWallMetalBLoose",
+        "strImgNorm" : "tiles/ItmWallMetalBLoosen",
+        "strPortraitImg" : "tiles/ItmWallMetalBLoose",
+        "strCOBase"    : "ItmWall1x1Loose",
+        "strCondLoot"    : "CNDOLWallTSDOCaution01",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallTSDOCaution01",
+            "ItmWall1x1Patch", "ItmWallTSDOCaution01Patch",
+            "ItmWall1x1Dmg", "ItmWallTSDOCaution01Dmg",
+            "ItmWall1x1Loose", "ItmWallTSDOCaution01Loose"
+        ],
+        "aInteractionsReplace"    : [
+            "ACTWall1x1Install", "ACTWallRYOB01Install"
+        ]
+    },
+    {
+        "strName" : "ItmWallTSDOCaution01Patch",
+        "strNameFriendly" : "Ryokka \"B-01\" Wall (Patched)",
+        "strImg" : "tiles/ItmWallMetalBPatch",
+        "strImgNorm" : "tiles/ItmWallPatchn",
+        "strPortraitImg" : "tiles/ItmWallMetalBPatch",
+        "strCOBase"    : "ItmWall1x1Patch",
+        "strCondLoot"    : "CNDOLWallTSDOCaution01",
+        "mapModeSwitches"    : [
+            "ItmWall1x1", "ItmWallTSDOCaution01",
+            "ItmWall1x1Patch", "ItmWallTSDOCaution01Patch",
+            "ItmWall1x1Dmg", "ItmWallTSDOCaution01Dmg",
+            "ItmWall1x1Loose", "ItmWallTSDOCaution01Loose"
+        ]
+    }
+]  

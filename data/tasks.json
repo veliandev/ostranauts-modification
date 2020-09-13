@@ -1,0 +1,42 @@
+[
+	{
+		"strBaseName" : "",
+		"generatedByRole" : "",
+		"generatedByCO" : "",
+		"assignedRoleOnGeneration" : "",
+		"expertiseRequired" : 0,
+		"urgency" : 0,
+		"strTarget" : "",
+		"strInteraction" : ""
+	},
+	{
+		"strBaseName" : "HullWallPatch",
+		"generatedByRole" : "",
+		"generatedByCO" : "ItmWall1x1Dmg",
+		"assignedRoleOnGeneration" : "Maintenance",
+		"expertiseRequired" : 0,
+		"urgency" : 0.5,
+		"strTarget" : "ItmWall1x1Dmg",
+		"strInteraction" : "ACTWall1x1Patch"
+	},
+	{
+		"strBaseName" : "HullFloorPatch",
+		"generatedByRole" : "",
+		"generatedByCO" : "ItmFloorGrate01Dmg",
+		"assignedRoleOnGeneration" : "Maintenance",
+		"expertiseRequired" : 0,
+		"urgency" : 0.4,
+		"strTarget" : "ItmFloorGrate01Dmg",
+		"strInteraction" : "ACTFloorGrate01Patch"
+	},
+	{
+		"strBaseName" : "CourseCorrection",
+		"generatedByRole" : "Navigation",
+		"generatedByCO" : "",
+		"assignedRoleOnGeneration" : "",
+		"expertiseRequired" : 0,
+		"urgency" : 0,
+		"strTarget" : "ItmStationNav",
+		"strInteraction" : "TASKCourseCorrection"
+	}
+]
