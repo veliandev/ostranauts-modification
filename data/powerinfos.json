@@ -120,7 +120,7 @@
       "PowerA",
       "PowerB"
     ],
-    "fAmount": 0.05,
+    "fAmount": 1.389e-5,
     "fMaxStored": 0.0,
     "strIntPowerOn": "MSDoor01ClosedPowerupAllow",
     "strIntPowerOff": "MSDoor01ClosedShutdownAllow",
@@ -134,7 +134,7 @@
       "PowerA",
       "PowerB"
     ],
-    "fAmount": 0.05,
+    "fAmount": 1.389e-5,
     "fMaxStored": 0.0,
     "strIntPowerOn": "MSDoor01ClosedLockedPowerupAllow",
     "strIntPowerOff": "MSDoor01ClosedLockedShutdownAllow",
@@ -148,7 +148,7 @@
       "PowerA",
       "PowerB"
     ],
-    "fAmount": 0.05,
+    "fAmount": 1.389e-5,
     "fMaxStored": 0.0,
     "strIntPowerOn": "MSDoor01OpenPowerupAllow",
     "strIntPowerOff": "MSDoor01OpenShutdownAllow",
@@ -162,7 +162,7 @@
       "PowerA",
       "PowerB"
     ],
-    "fAmount": 0.05,
+    "fAmount": 1.389e-5,
     "fMaxStored": 0.0,
     "strIntPowerOn": "MSDoor01OpenLockedPowerupAllow",
     "strIntPowerOff": "MSDoor01OpenLockedShutdownAllow",
