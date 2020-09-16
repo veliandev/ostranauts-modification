@@ -1,4 +1,4 @@
-import sys, subprocess, io, os, json
+import sys, subprocess, io, os, json, copy
 
 from PySide2.QtCore import (QCoreApplication, QDate, QDateTime, QMetaObject,
     QObject, QPoint, QRect, QSize, QTime, QUrl, Qt)
@@ -6,6 +6,8 @@ from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
     QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter,
     QPixmap, QRadialGradient)
 from PySide2.QtWidgets import *
+
+from shutil import copyfile
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -50,6 +52,7 @@ class Ui_MainWindow(object):
     # retranslateUi
 
 dataPath = "./data/"
+imagePath = "./images/"
 modPath = "./mods"
 baseContentList = [
     "ads.json",
@@ -111,7 +114,6 @@ def startButtonClicked(self):
 
 def loadBaseContentAsJsonList():
     for file in baseContentList:
-        print(file)
         baseContent.append({'file': file, 'json': json.load(open(os.path.join(dataPath, file), encoding='utf-8-sig'))})
 
 def getModContentAsJson():
@@ -122,7 +124,7 @@ def getModContentAsJson():
 
 def getAlteredModJson():
 
-    alteredContent = baseContent
+    alteredContent = copy.deepcopy(baseContent)
 
     for alteredItem in alteredContent:
         for modContentItem in modContent:
@@ -130,6 +132,14 @@ def getAlteredModJson():
                 alteredItem.get("json").append(modContentItem.get("json"))
     
     return alteredContent
+
+def replaceImagesWithModContent():
+    for dir in modFolders:
+        modContents = os.listdir(os.path.join(modPath, dir))
+        if "images" in modContents:
+            print(os.listdir(os.path.join(modPath, dir, "images")))
+            for item in os.listdir(os.path.join(modPath, dir, "images")):
+                copyfile(os.path.join(modPath, dir, "images", item), "./images/" + item)
 
 def replaceBaseContentWithAlteredContent(alteredContent):
 
