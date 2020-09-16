@@ -1,55 +1,5 @@
-import sys, subprocess, io, os, json, copy
-
-from PySide2.QtCore import (QCoreApplication, QDate, QDateTime, QMetaObject,
-    QObject, QPoint, QRect, QSize, QTime, QUrl, Qt)
-from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
-    QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter,
-    QPixmap, QRadialGradient)
-from PySide2.QtWidgets import *
-
+import sys, subprocess, io, os, json, copy, time, psutil
 from shutil import copyfile
-
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        if not MainWindow.objectName():
-            MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(348, 269)
-
-        self.centralwidget = QWidget(MainWindow)
-        self.centralwidget.setObjectName(u"centralwidget")
-        self.listWidget = QListWidget(self.centralwidget)
-        self.listWidget.setObjectName(u"listWidget")
-        self.listWidget.setGeometry(QRect(10, 10, 321, 192))
-
-        getModDirectoryListings()
-
-        for mod in modFolders:
-            listItem = QListWidgetItem(mod)
-            self.listWidget.addItem(listItem)
-
-        getModContentAsJson()
-        loadBaseContentAsJsonList()
-
-        self.startButton = QPushButton(self.centralwidget)
-        self.startButton.setObjectName(u"startButton")
-        self.startButton.setGeometry(QRect(190, 210, 140, 23))
-        self.startButton.clicked.connect(startButtonClicked)
-
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.statusbar = QStatusBar(MainWindow)
-        self.statusbar.setObjectName(u"statusbar")
-        self.statusbar.setEnabled(True)
-        MainWindow.setStatusBar(self.statusbar)
-
-        self.retranslateUi(MainWindow)
-
-        QMetaObject.connectSlotsByName(MainWindow)
-    # setupUi
-
-    def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.startButton.setText(QCoreApplication.translate("MainWindow", u"Start Ostranauts", None))
-    # retranslateUi
 
 dataPath = "./data/"
 imagePath = "./images/"
@@ -101,16 +51,6 @@ baseContentList = [
 baseContent = []
 modContent = []
 modFolders = []
-
-def startButtonClicked(self):
-    if os.name == "posix":
-        alteredContent = getAlteredModJson()
-        replaceBaseContentWithAlteredContent(alteredContent)
-        subprocess.run(["xdg-open", "steam://run/1022980"])
-    elif os.name == "nt":
-        alteredContent = getAlteredModJson()
-        replaceBaseContentWithAlteredContent(alteredContent)
-        subprocess.run(["run", "steam://run/1022980"])
 
 def loadBaseContentAsJsonList():
     for file in baseContentList:
@@ -164,14 +104,39 @@ def getModDirectoryListings():
         if os.path.isdir(os.path.join(modPath, modDirectory)):
             modFolders.append(modDirectory)
 
-app = QApplication(sys.argv)
-mainWindow = QMainWindow()
+def get_pid(processName):
+    #Iterate over the all the running process
+    for proc in psutil.process_iter():
+        try:
+            # Check if process name contains the given name string.
+            if processName.lower() in proc.name().lower():
+                return True
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            pass
+    return False
 
-window = Ui_MainWindow()
-window.setupUi(mainWindow)
 
-mainWindow.show()
+def main():
 
-app.exec_()
+    getModDirectoryListings()
+    getModContentAsJson()
+    loadBaseContentAsJsonList()
+    replaceBaseContentWithAlteredContent(getAlteredModJson())
 
-restoreBaseContent()
+    if os.name == "posix":
+        subprocess.run(["xdg-open", "steam://run/1022980"])
+    elif os.name == "nt":
+        subprocess.run(["run", "steam://run/1022980"])
+
+    processReady = False
+
+    while processReady == False:
+        if get_pid("Ostranauts.exe") != False:
+            processReady = True
+    
+    while get_pid("Ostranauts.exe") != False:
+        pass
+    
+    restoreBaseContent()
+
+main()
