@@ -25,6 +25,9 @@ class Ui_MainWindow(object):
             listItem = QListWidgetItem(mod)
             self.listWidget.addItem(listItem)
 
+        getModContentAsJson()
+        loadBaseContentAsJsonList()
+
         self.startButton = QPushButton(self.centralwidget)
         self.startButton.setObjectName(u"startButton")
         self.startButton.setGeometry(QRect(190, 210, 140, 23))
@@ -98,19 +101,13 @@ modFolders = []
 
 def startButtonClicked(self):
     if os.name == "posix":
-        getModContentAsJson()
-        loadBaseContentAsJsonList()
         alteredContent = getAlteredModJson()
         replaceBaseContentWithAlteredContent(alteredContent)
         subprocess.run(["xdg-open", "steam://run/1022980"])
-        restoreBaseContent()
     elif os.name == "nt":
-        getModContentAsJson()
-        loadBaseContentAsJsonList()
         alteredContent = getAlteredModJson()
         replaceBaseContentWithAlteredContent(alteredContent)
         subprocess.run(["run", "steam://run/1022980"])
-        restoreBaseContent()
 
 def loadBaseContentAsJsonList():
     for file in baseContentList:
