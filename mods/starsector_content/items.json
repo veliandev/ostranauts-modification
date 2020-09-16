@@ -1,0 +1,21 @@
+{
+    "strName" : "ItmNarcotics",
+    "strImg"  : "../mods/starsector_content/images/ItmNarcotics",
+    "fZScale"  : 0.02,
+    "nCols"  : 1,
+    "inventoryWidth": 1,
+    "inventoryHeight": 1,
+    "aSocketAdds"    : [
+      "TILItemAdds"
+    ],
+    "aSocketForbids"    : [
+      "Blank", "Blank", "Blank",
+      "Blank", "TILItemForbids", "Blank",
+      "Blank", "Blank", "Blank"
+    ],
+    "aSocketReqs"    : [
+      "Blank", "Blank", "Blank",
+      "Blank", "TILFloor", "Blank",
+      "Blank", "Blank", "Blank"
+    ]
+  }

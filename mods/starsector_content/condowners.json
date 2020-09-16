@@ -1,0 +1,37 @@
+{
+    "strName" : "ItmNarcotics",
+    "strItemDef" : "ItmNarcotics",
+    "strDesc" : "Just a shitload of drugs",
+    "strNameFriendly" : "Narcotics",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "nStackLimit"    : 5,
+    "aInteractions" : [
+        "PickupItem",
+        "PickupItemStack",
+        "SeekFoodDirect"
+    ],
+    "aStartingConds" : [
+        "IsFood=1.0x1",
+        "IsSolid=1.0x1.0",
+        "StatBasePrice=1.0x6.5",
+        "StatMass=1.0x0.2"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+    ],
+    "aUpdateCommands" : [
+    ],
+    "mapGUIPropMaps"  : null,
+    "strPortraitImg"  : "../mods/starsector_content/images/ItmNarcotics",
+    "mapSlotImage" : [
+        "heldL","../mods/starsector_content/images/ItmNarcotics",
+        "heldR","../mods/starsector_content/images/ItmNarcotics"
+    ],
+    "mapSlotUsage" : [
+        "heldL","Blank",
+        "heldR","Blank"
+    ],
+    "jsonPI"            : null
+}

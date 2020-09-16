@@ -1,0 +1,84 @@
+[{
+    "strName" : "ItmGlass1x1",
+    "strNameFriendly" : "Glasswall",
+    "strItemDef" : "ItmGlass1x1",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+    ],
+    "aStartingConds" : [
+        "IsNonHighlightable=1.0x1",
+        "IsWall=1.0x1",
+        "IsWall1=1.0x1",
+        "IsGlasswall=1.0x1",
+        "IsHiddenInv=1.0x1",
+        "IsInstalled=1.0x1",
+        "IsCheckRoom=1.0x1",
+        "IsSolid=1.0x1.0",
+        "StatMass=1.0x10.0"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+    ],
+    "aUpdateCommands" : [
+        "Destructable,StatDamage,ItmGlass1x1dmg,10.0,1.0"
+    ],
+    "mapGUIPropMaps"  : null,
+    "strPortraitImg"  : "../mods/glasswall_codeart/images/ItmGlass",
+    "jsonPI"            : null
+},
+{
+    "strName" : "ItmGlass1x1Loose",
+    "strItemDef" : "ItmGlass1x1Loose",
+    "strType"    : "Item",
+    "aInteractions" : [
+        "PickupItem"
+    ],
+    "aStartingConds" : [
+        "IsSolid=1.0x1.0",
+        "IsWall=1.0x1",
+        "IsGlass=1.0x1",
+        "IsWall1x1=1.0x1",
+        "StatMass=1.0x6.0"
+    ],
+    "strPortraitImg"  : "../mods/glasswall_codeart/images/ItmGlassLoose"
+},
+{
+    "strName" : "ItmGlass1x1Dmg",
+    "strNameFriendly" : "Glasswall (Damaged)",
+    "strItemDef" : "ItmGlass1x1Dmg",
+    "strType"    : "Item",
+    "strLoot"    : null,
+    "aInteractions" : [
+    ],
+    "aStartingConds" : [
+        "IsNonHighlightable=1.0x1",
+        "IsWall=1.0x1",
+        "IsWall1x1=1.0x1",
+        "IsGlasswall=1.0x1",
+        "IsHiddenInv=1.0x1",
+        "IsPatched=1.0x1",
+        "IsInstalled=1.0x1",
+        "IsCheckRoom=1.0x1",
+        "IsSolid=1.0x1.0",
+        "StatMass=1.0x2.0"
+    ],
+    "mapCondTolerance"       : [
+    ],
+    "mapPoints"      : [
+        "RoomA,16,0",
+        "RoomB,-16,0",
+        "RoomC,0,16",
+        "RoomD,0,-16"
+    ],
+    "aUpdateCommands" : [
+        "Destructable,StatDamage,ACTWall1x1Destroy,2.0,1.0",
+        "OnAddCond,IsPatched,RemoveTask,Blank,Repair,ItmGlass1x1,true",
+        "GasExchange,RoomA,RoomB,0.16",
+        "GasExchange,RoomC,RoomD,0.16"
+    ],
+    "mapGUIPropMaps"  : null,
+    "strPortraitImg"  : "../mods/glasswall_codeart/images/ItmGlassBroken",
+    "jsonPI"            : null
+}]

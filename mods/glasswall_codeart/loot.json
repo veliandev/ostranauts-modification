@@ -1,0 +1,11 @@
+[
+    {
+        "strName" : "ItmSupplyKioskInv",
+        "aCOs"    : [
+        "ItmGlass1x1Loose=1x100" 
+        ],
+        "aLoots"  : [
+        ],
+        "strType" : "item"
+    }
+]

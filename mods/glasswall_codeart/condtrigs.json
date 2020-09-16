@@ -1,0 +1,8 @@
+[
+    { "strName" : "TIsGlass1x1dmg", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsWall1x1", "IsInstalled", "IsDamaged" ], "aForbids" : [ ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "TIsGlass", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsGlass" ], "aForbids" : [ ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "TIsGlasswall", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsWall", "IsGlasswall" ], "aForbids" : [ ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "TIsGlasswallUninstalled", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsWall", "IsGlass" ], "aForbids" : [ "IsInstalled" ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "TIsGlasswallInstalled", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsInstalled", "IsWall" ], "aForbids" : [  ], "aTriggers" : [ ], "bAND" : true },
+    { "strName" : "TIsGlasswallInstalledPatched", "strCondName" : "", "fChance" : 1.0, "fCount" : 1.0, "aReqs" : [ "IsWall", "IsInstalled", "IsPatched", "IsGlasswall" ], "aForbids" : [ ], "aTriggers" : [ ], "bAND" : true }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "strName" : "ItmGlass1x1",
+        "strImg"  : "../mods/glasswall_codeart/images/ItmGlassSheet",
+        "strImgNorm"  : "../mods/glasswall_codeart/images/ItmGlassSheetn",
+        "bHasSpriteSheet" : true,
+        "ctSpriteSheet" : "TIsWall",
+        "nCols"  : 1,
+        "aSocketAdds"    : [
+        "TILWallAdds"
+        ],
+        "aSocketForbids"    : [
+        "Blank", "Blank", "Blank",
+        "Blank", "TILObstruction", "Blank",
+        "Blank", "Blank", "Blank"
+        ],
+        "aSocketReqs"    : [
+        "Blank", "Blank", "Blank",
+        "Blank", "Blank", "Blank",
+        "Blank", "Blank", "Blank"
+        ],
+        "aShadowBoxes"  : [
+        "0.0,0.0,0.0,0.0"
+        ]
+  },
+  {
+        "strName" : "ItmGlass1x1Dmg",
+        "strImg"  : "../mods/glasswall_codeart/images/ItmGlassBroken",
+        "strImgNorm"  : "../mods/glasswall_codeart/images/ItmGlassBrokenn",
+        "nCols"  : 1,
+        "aSocketAdds"    : [
+        "TILWallAdds"
+        ],
+        "aSocketForbids"    : [
+        "Blank", "Blank", "Blank",
+        "Blank", "TILObstruction", "Blank",
+        "Blank", "Blank", "Blank"
+        ],
+        "aSocketReqs"    : [
+        "Blank", "Blank", "Blank",
+        "Blank", "Blank", "Blank",
+        "Blank", "Blank", "Blank"
+        ],
+        "aShadowBoxes"  : [
+        "0.0,0.0,0.0,0.0"
+        ]
+  },
+  {
+        "strName" : "ItmGlass1x1Loose",
+        "strImg"  : "../mods/glasswall_codeart/images/ItmGlassLoose",
+        "strImgNorm"  : "../mods/glasswall_codeart/images/ItmGlassLoosen",
+        "fZScale"  : 0.02,
+        "nCols"  : 1,
+        "aSocketAdds"    : [
+            "TILItemAdds"
+        ],
+        "aSocketForbids"    : [
+            "Blank", "Blank", "Blank",
+            "Blank", "TILItemForbids", "Blank",
+            "Blank", "Blank", "Blank"
+        ],
+        "aSocketReqs"    : [
+            "Blank", "Blank", "Blank",
+            "Blank", "TILFloor", "Blank",
+            "Blank", "Blank", "Blank"
+        ]  
+   }
+]
