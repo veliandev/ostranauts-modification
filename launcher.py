@@ -69,8 +69,12 @@ def getAlteredModJson():
     for alteredItem in alteredContent:
         for modContentItem in modContent:
             if modContentItem.get("file") == alteredItem.get("file"):
-                alteredItem.get("json").append(modContentItem.get("json"))
-    
+                if type(modContentItem.get("json")) != dict:
+                    for item in modContentItem.get("json"):
+                        alteredItem.get("json").append(item)
+                else:
+                    alteredItem.get("json").append(modContentItem.get("json"))
+
     return alteredContent
 
 def replaceImagesWithModContent():
