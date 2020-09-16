@@ -117,7 +117,8 @@ def loadBaseContentAsJsonList():
 def getModContentAsJson():
     for modDirectory in modFolders:
         for jsonFile in os.listdir(os.path.join(modPath, modDirectory)):
-            modContent.append({"mod": modDirectory, "file": jsonFile, "json": json.load(open(os.path.join(modPath, modDirectory, jsonFile), encoding='utf-8-sig'))})
+            if os.path.isfile(os.path.join(modPath, modDirectory, jsonFile)):
+                modContent.append({"mod": modDirectory, "file": jsonFile, "json": json.load(open(os.path.join(modPath, modDirectory, jsonFile), encoding='utf-8-sig'))})
 
 def getAlteredModJson():
 
@@ -134,14 +135,14 @@ def replaceBaseContentWithAlteredContent(alteredContent):
 
     for content in alteredContent:
         f = open(os.path.join(dataPath, content.get("file")), "w")
-        f.write(json.dumps(content.get("json")))
+        f.write(json.dumps(content.get("json"), indent=4, sort_keys=True))
         f.close()
 
 def restoreBaseContent():
 
     for content in baseContent:
         f = open(os.path.join(dataPath, content.get("file")), "w")
-        f.write(json.dumps(content.get("json")))
+        f.write(json.dumps(content.get("json"), indent=4, sort_keys=True))
         f.close()
 
 def getModDirectoryListings():
