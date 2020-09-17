@@ -54,13 +54,13 @@ modFolders = []
 
 def loadBaseContentAsJsonList():
     for file in baseContentList:
-        baseContent.append({'file': file, 'json': json.load(open(os.path.join(dataPath, file), encoding='utf-8-sig'))})
+        baseContent.append({'file': file, 'json': json.load(open(os.path.join(dataPath, file)))})
 
 def getModContentAsJson():
     for modDirectory in modFolders:
         for jsonFile in os.listdir(os.path.join(modPath, modDirectory)):
             if os.path.isfile(os.path.join(modPath, modDirectory, jsonFile)):
-                modContent.append({"mod": modDirectory, "file": jsonFile, "json": json.load(open(os.path.join(modPath, modDirectory, jsonFile), encoding='utf-8-sig'))})
+                modContent.append({"mod": modDirectory, "file": jsonFile, "json": json.load(open(os.path.join(modPath, modDirectory, jsonFile))})
 
 def getAlteredModJson():
 
@@ -128,15 +128,9 @@ def main():
     replaceBaseContentWithAlteredContent(getAlteredModJson())
 
     if os.name == "posix":
-        subprocess.run(["xdg-open", "steam://run/1022980"])
+        subprocess.run(["wine", "../../Ostranauts.exe"])
     elif os.name == "nt":
-        subprocess.run(["explorer.exe", "steam://run/1022980"])
-
-    processReady = False
-
-    while processReady == False:
-        if get_pid("Ostranauts.exe") != False:
-            processReady = True
+        subprocess.run(["start", "../../Ostranauts.exe"])
     
     while get_pid("Ostranauts.exe") != False:
         pass
