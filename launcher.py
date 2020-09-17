@@ -54,13 +54,13 @@ modFolders = []
 
 def loadBaseContentAsJsonList():
     for file in baseContentList:
-        baseContent.append({'file': file, 'json': json.load(open(os.path.join(dataPath, file)))})
+        baseContent.append({'file': file, 'json': json.load(open(os.path.join(dataPath, file)), encoding='utf-8-sig')})
 
 def getModContentAsJson():
     for modDirectory in modFolders:
         for jsonFile in os.listdir(os.path.join(modPath, modDirectory)):
             if os.path.isfile(os.path.join(modPath, modDirectory, jsonFile)):
-                modContent.append({"mod": modDirectory, "file": jsonFile, "json": json.load(open(os.path.join(modPath, modDirectory, jsonFile)))})
+                modContent.append({"mod": modDirectory, "file": jsonFile, "json": json.load(open(os.path.join(modPath, modDirectory, jsonFile)),  encoding='utf-8-sig')})
 
 def getAlteredModJson():
 
