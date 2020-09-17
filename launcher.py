@@ -60,7 +60,7 @@ def getModContentAsJson():
     for modDirectory in modFolders:
         for jsonFile in os.listdir(os.path.join(modPath, modDirectory)):
             if os.path.isfile(os.path.join(modPath, modDirectory, jsonFile)):
-                modContent.append({"mod": modDirectory, "file": jsonFile, "json": json.load(open(os.path.join(modPath, modDirectory, jsonFile))})
+                modContent.append({"mod": modDirectory, "file": jsonFile, "json": json.load(open(os.path.join(modPath, modDirectory, jsonFile)))})
 
 def getAlteredModJson():
 
