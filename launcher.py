@@ -130,7 +130,7 @@ def main():
     if os.name == "posix":
         subprocess.run(["xdg-open", "steam://run/1022980"])
     elif os.name == "nt":
-        subprocess.run(["%windir%\\explorer.exe", "steam://run/1022980"])
+        subprocess.run(["explorer.exe", "steam://run/1022980"])
 
     processReady = False
 
