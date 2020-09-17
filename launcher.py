@@ -129,7 +129,7 @@ def main():
 
     if os.name == "posix":
         subprocess.run(["wine", "../../Ostranauts.exe"])
-    elif os.name == "nt":
+    else:
         subprocess.run(["start", "../../Ostranauts.exe"])
     
     while get_pid("Ostranauts.exe") != False:
