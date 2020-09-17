@@ -42,7 +42,7 @@ baseContentList = [
     "testButtonJSONSchema.json",
     "conditions.json",
     "cooverlays.json",
-    # "IAHistory.csv",
+    # "IAHistory.csv", - Borked, CSV isn't JSON silly!
     "lifeevents.json",
     "names_ship_genadj.json",
     "roles.json",
@@ -54,13 +54,13 @@ modFolders = []
 
 def loadBaseContentAsJsonList():
     for file in baseContentList:
-        baseContent.append({'file': file, 'json': json.load(open(os.path.join(dataPath, file)), encoding='utf-8-sig')})
+        baseContent.append({'file': file, 'json': json.load(open(os.path.join(dataPath, file)), strict=False)})
 
 def getModContentAsJson():
     for modDirectory in modFolders:
         for jsonFile in os.listdir(os.path.join(modPath, modDirectory)):
             if os.path.isfile(os.path.join(modPath, modDirectory, jsonFile)):
-                modContent.append({"mod": modDirectory, "file": jsonFile, "json": json.load(open(os.path.join(modPath, modDirectory, jsonFile)),  encoding='utf-8-sig')})
+                modContent.append({"mod": modDirectory, "file": jsonFile, "json": json.load(open(os.path.join(modPath, modDirectory, jsonFile)), strict=False)})
 
 def getAlteredModJson():
 
@@ -130,11 +130,12 @@ def main():
     if os.name == "posix":
         subprocess.run(["wine", "../../Ostranauts.exe"])
     else:
-        subprocess.run(["start", "../../Ostranauts.exe"])
+        subprocess.run(["../../Ostranauts.exe"])
     
     while get_pid("Ostranauts.exe") != False:
         pass
     
     restoreBaseContent()
 
-main()
+if __name__ == "__main__":
+    main()
