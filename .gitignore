@@ -1,4 +1,6 @@
-/data/
-/mesh/
-/audio/
-/images/
+bin/
+obj/
+data/
+images/
+mesh/
+audio/
