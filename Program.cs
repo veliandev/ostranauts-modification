@@ -38,6 +38,11 @@ namespace ostranauts_modding
 
                 schema.ReplaceValues(mod);
                 schema.AppendValues(mod);
+
+                if (Directory.Exists(Path.Join(directory, "ships")))
+                {
+                    Utils.CopyDirectoryAndContentsToLocation(Path.Join(directory, "ships"), "./data/ships");
+                }
             }
 
             schema.WriteJson();
