@@ -457,7 +457,10 @@ namespace ostranauts_modding
                 {
                     var sv = schema.conditionSimple.Where(j => j.strName == i.strName).SingleOrDefault();
                     if(sv != null)
-                        return sv;
+                    {
+                        sv.aValues.ToList().ForEach(k => i.aValues.Add(k));
+                        return i;
+                    }
                     else
                         return i;
                 });
