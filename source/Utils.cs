@@ -19,7 +19,14 @@ namespace ostranauts_modding
             // Copy each file into the new directory.
             foreach (FileInfo fi in source.GetFiles())
             {
-                fi.CopyTo(Path.Combine(target.FullName, fi.Name), true);
+                try
+                {
+                    fi.CopyTo(Path.Combine(target.FullName, fi.Name));
+                }
+                catch (System.Exception)
+                {                   
+                    
+                }
             }
     
             // Copy each subdirectory using recursion.

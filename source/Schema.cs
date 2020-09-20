@@ -142,7 +142,10 @@ namespace ostranauts_modding
                 {
                     var sv = schema.loot.Where(j => j.strName == i.strName).SingleOrDefault();
                     if(sv != null)
-                        return sv;
+                    {
+                        sv.aCOs.ToList().ForEach(k => i.aCOs.Add(k));
+                        return i;
+                    }
                     else
                         return i;
                 });
