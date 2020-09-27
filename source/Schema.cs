@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 using System.IO;
+using System.Text.RegularExpressions;
+using System.Text;
 
 namespace ostranauts_modding
 {
@@ -104,9 +106,10 @@ namespace ostranauts_modding
 
         public void WriteJsonToFile(object jsonObject, string file)
         {
-            File.WriteAllText(Path.Join("data", file), JsonConvert.SerializeObject(jsonObject, Formatting.Indented, new JsonSerializerSettings
+            File.WriteAllText(Path.Join("data", file), JsonConvert.SerializeObject(jsonObject, new JsonSerializerSettings
             {
-                NullValueHandling = NullValueHandling.Ignore
+                NullValueHandling = NullValueHandling.Ignore,
+                Formatting = Formatting.Indented
             }));
         }
 
@@ -853,17 +856,17 @@ namespace ostranauts_modding
                 });
             }
 
-            if(conditionSimple != null && schema.conditionSimple != null)
-            {
-                schema.conditionSimple.ForEach(i =>
-                {
-                    var match = conditionSimple.Where(j => j.strName == i.strName).Any();
-                    if (!match)
-                    {
-                        conditionSimple = conditionSimple.Append(i).ToList();
-                    }
-                });
-            }
+            // if(conditionSimple != null && schema.conditionSimple != null)
+            // {
+            //     schema.conditionSimple.ForEach(i =>
+            //     {
+            //         var match = conditionSimple.Where(j => j.strName == i.strName).Any();
+            //         if (!match)
+            //         {
+            //             conditionSimple = conditionSimple..Append(i).ToList();
+            //         }
+            //     });
+            // }
 
             if(lifeEvent != null && schema.lifeEvent != null)
             {
